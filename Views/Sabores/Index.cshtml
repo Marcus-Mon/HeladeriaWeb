@@ -1,0 +1,27 @@
+﻿@model List<HeladeriaWeb.Models.SaborHelado>
+
+<h2>Lista de Sabores</h2>
+
+<a href="/Sabores/Create" id="createBtn">Crear nuevo</a>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+        <th>Acciones</th>
+    </tr>
+
+    @foreach (var s in Model)
+    {
+        <tr>
+            <td>@s.Nombre</td>
+            <td>@s.Descripcion</td>
+            <td>@s.Precio</td>
+            <td>
+                <a href="/Sabores/Edit/@s.Id">Editar</a>
+                <a href="/Sabores/Delete/@s.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+</table>

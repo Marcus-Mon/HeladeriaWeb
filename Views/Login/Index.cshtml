@@ -1,0 +1,13 @@
+﻿<h2>Login</h2>
+
+<form method="post">
+    <input type="text" name="username" id="username" placeholder="Usuario" />
+    <input type="password" name="password" id="password" placeholder="Contraseña" />
+
+    <button id="loginBtn">Login</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p>@ViewBag.Error</p>
+}

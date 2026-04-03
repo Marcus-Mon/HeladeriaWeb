@@ -1,0 +1,13 @@
+﻿@model HeladeriaWeb.Models.SaborHelado
+
+<h2>Editar Sabor</h2>
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    <input name="Nombre" value="@Model.Nombre" />
+    <input name="Descripcion" value="@Model.Descripcion" />
+    <input name="Precio" value="@Model.Precio" />
+
+    <button>Guardar</button>
+</form>
